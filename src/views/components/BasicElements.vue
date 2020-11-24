@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
+                     <!-- Buttons -->
+                    <h3 class="text font-weight-bold mb-1">Buttons</h3>
                     <!-- Basic elements -->
-                    <h2 class="mb-5">
+                    <h1 class="mb-2">
                         <span>Basic Elements</span>
-                    </h2>
-                    <!-- Buttons -->
-                    <h3 class="h4 text-success font-weight-bold mb-4">Buttons</h3>
+                    </h1>
                     <!-- Button styles -->
                     <div>
                         <base-button type="primary">Button</base-button>
@@ -17,7 +17,7 @@
 
                         <!-- Button wizes -->
                         <div class="mb-3 mt-5">
-                            <small class="text-uppercase font-weight-bold">Pick your size</small>
+                            <small class="text font-weight-bold">Pick your size</small>
                         </div>
 
                         <base-button type="primary" size="sm">Small</base-button>
@@ -27,7 +27,7 @@
                     </div>
                     <!-- Button colors -->
                     <div class="mb-3 mt-5">
-                        <small class="text-uppercase font-weight-bold">Pick your color</small>
+                        <small class="text font-weight-bold">Pick your color</small>
                     </div>
                     <base-button class="btn-1" type="primary">Primary</base-button>
                     <base-button class="btn-1" type="info">Info</base-button>
@@ -37,7 +37,7 @@
                     <base-button class="btn-1" type="neutral">Neutral</base-button>
 
                     <div class="mb-3 mt-5">
-                        <small class="text-uppercase font-weight-bold">Outline</small>
+                        <small class="text font-weight-bold">Outline</small>
                     </div>
 
                     <base-button class="btn-1" outline type="primary">Outline Primary</base-button>
@@ -48,7 +48,7 @@
                     <base-button class="btn-1" outline type="neutral">Outline Neutral</base-button>
                     <!-- Button links -->
                     <div class="mb-3 mt-5">
-                        <small class="text-uppercase font-weight-bold">Links</small>
+                        <small class="text font-weight-bold">Links</small>
                     </div>
                     <a href="#" class="btn btn-link text-default">Default</a>
                     <a href="#" class="btn btn-link text-primary">Primary</a>

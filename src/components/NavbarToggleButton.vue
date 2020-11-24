@@ -5,7 +5,9 @@
             :aria-controls="target"
             :aria-expanded="toggled"
             aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <div class="navbar-toggler-burger">
+              <div></div>
+        </div>
     </button>
 </template>
 <script>

@@ -18,7 +18,21 @@
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
                     <a href="./index.html">
-                        <img src="img/brand/blue.png">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.21 37.69">
+              <g id="Ebene_2" data-name="Ebene 2">
+                <g id="Ebene_1-2" data-name="Ebene 1">
+                  <path
+                    d="M123.4,30.42a5.36,5.36,0,0,1-5.32,4.88l-.48,0a5.35,5.35,0,1,1,4.57-8.76A5.27,5.27,0,0,1,123.4,30.42Z"
+                  />
+                  <path
+                    d="M138.39,31.88A5.66,5.66,0,0,1,132.78,37a4.36,4.36,0,0,1-.51,0,5.64,5.64,0,1,1,4.83-9.24A5.56,5.56,0,0,1,138.39,31.88Z"
+                  />
+                  <path
+                    d="M212.42,37.69a4.79,4.79,0,0,1-4.79-4.79V9.58H9.58V32.9A4.79,4.79,0,1,1,0,32.9V4.79A4.78,4.78,0,0,1,4.79,0H212.42a4.78,4.78,0,0,1,4.79,4.79V32.9A4.78,4.78,0,0,1,212.42,37.69Z"
+                  />
+                </g>
+              </g>
+            </svg>
                     </a>
                 </div>
                 <div class="col-6 collapse-close">
