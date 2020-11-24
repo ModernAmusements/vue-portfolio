@@ -153,7 +153,7 @@
   .navbar-toggler {
     color: rgba(255, 255, 255, 1);
   }
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-burger {
+  .navbar-toggler[aria-expanded='true'] .navbar-toggler-burger {
     display: block;
     width: 24px;
     height: 26px;
@@ -170,10 +170,9 @@
       display: block;
       background: white;
     }
-
     div:before {
       visibility: visible;
-    transform: translateY(0) rotate(45deg);
+      transform: translateY(0) rotate(45deg);
     }
     div:after {
       visibility: visible;
@@ -215,7 +214,6 @@
     }
   }
 }
-
 @include media-breakpoint-up(md) {
   .navbar-transparent {
     .navbar-nav {
@@ -251,7 +249,7 @@
   .navbar-nav {
     .nav-link {
       padding: 0.625rem 0;
-      color: theme-color('default') !important;
+      color: $white !important;
     }
     .dropdown-menu {
       box-shadow: none;
@@ -270,7 +268,7 @@
     left: 0;
     right: 0;
     z-index: 1050;
-    margin: 0.7rem;
+    margin-top: 0.7rem;
     overflow-y: auto;
     height: auto !important;
     opacity: 0;
@@ -301,11 +299,13 @@
       display: block;
       padding-bottom: 1rem;
       margin-bottom: 1rem;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.9);
     }
     .collapse-brand {
+      align-content: flex-end;
       svg {
         height: 36px;
+        fill: #dff1fd;
       }
     }
     .collapse-close {
@@ -314,12 +314,9 @@
   }
   .navbar-collapse.collapsing,
   .navbar-collapse.show {
-    padding: 1.5rem;
-    border-radius: $border-radius;
-    background-color: rgba(242, 242, 236, 0.9);
-    backdrop-filter: saturate(180%) blur(20px);
-    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
-      0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+    // padding: 1.5rem;
+    // border-radius: $border-radius;
+    // background-color: rgba(242, 242, 236, 0.9);
     animation: show-navbar-collapse 0.2s ease forwards;
   }
   .navbar-collapse.collapsing-out {
