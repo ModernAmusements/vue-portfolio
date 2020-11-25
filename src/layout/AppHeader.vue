@@ -53,14 +53,11 @@
             </g>
           </g>
         </svg>
-        <!-- <img src="img/brand/white.png" alt="logo" /> -->
       </router-link>
       <div class="row" slot="content-header" slot-scope="{ closeMenu }">
         <div class="col-6 collapse-brand">
-          <a
-            href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
-          >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.21 37.69">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.21 37.69">
               <g id="Ebene_2" data-name="Ebene 2">
                 <g id="Ebene_1-2" data-name="Ebene 1">
                   <path
@@ -77,11 +74,12 @@
             </svg>
           </a>
         </div>
-        <div class="col-6 collapse-close">
+        <!-- <div class="col-6 collapse-close">
           <close-button @click="closeMenu"></close-button>
-        </div>
+        </div> -->
       </div>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <!-- 1 -->
         <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
           <a
             slot="title"
@@ -130,6 +128,7 @@
             </a>
           </div>
         </base-dropdown>
+        <!-- 2 -->
         <base-dropdown tag="li" class="nav-item">
           <a
             slot="title"
