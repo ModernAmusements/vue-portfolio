@@ -8,30 +8,13 @@
     :aria-expanded="toggled"
     aria-label="Toggle navigation"
   >
-    <div
-      id="burger"
-      :class="{ active: isBurgerActive }"
-      @click.prevent="toggle"
-      class="navbar-toggler-burger"
-    >
+    <div @click.prevent="toggle" class="navbar-toggler-burger">
       <div></div>
     </div>
   </button>
 </template>
 <script>
-import { store, mutations } from '@/store.js';
-
 export default {
-  computed: {
-    isBurgerActive() {
-      return store.isNavOpen;
-    },
-  },
-  methods: {
-    toggle() {
-      mutations.toggleNav();
-    },
-  },
   props: {
     target: {
       type: [String, Number],
@@ -94,7 +77,8 @@ textarea:focus {
     width: 24px;
     height: 2px;
     display: block;
-    background: white;
+    background: #dff1fd;
+    border-radius: 99em;
   }
   div:after,
   div:before {
@@ -106,6 +90,7 @@ textarea:focus {
     height: 2px;
     background: inherit;
     transition: transform 0.3s ease;
+    border-radius: 99em;
   }
   div:before {
     transform: translateY(-6px);

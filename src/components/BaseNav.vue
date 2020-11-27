@@ -24,27 +24,23 @@
       </navbar-toggle-button>
 
       <slot name="container-after"></slot>
-      <transition name="slide">
-        <div
-          class="collapse navbar-collapse"
-          :class="{ show: toggled }"
-          :id="contentId"
-          v-click-outside="closeMenu"
-          v-if="isPanelOpen"
-        >
-          <div class="navbar-collapse-header">
-            <slot name="content-header" :close-menu="closeMenu"></slot>
-          </div>
-          <slot :close-menu="closeMenu"></slot>
+      <div
+        class="collapse navbar-collapse"
+        :class="{ show: toggled }"
+        :id="contentId"
+        v-click-outside="closeMenu"
+      >
+        <div class="navbar-collapse-header">
+          <slot name="content-header" :close-menu="closeMenu"></slot>
         </div>
-      </transition>
+        <slot :close-menu="closeMenu"></slot>
+      </div>
     </div>
   </nav>
 </template>
 <script>
 import { FadeTransition } from 'vue2-transitions';
 import NavbarToggleButton from './NavbarToggleButton';
-import { store, mutations } from '@/store.js';
 
 export default {
   name: 'base-nav',
@@ -95,14 +91,7 @@ export default {
       toggled: false,
     };
   },
-  computed: {
-    isPanelOpen() {
-      return store.isNavOpen;
-    },
-  },
   methods: {
-    closeSidebarPanel: mutations.toggleNav,
-
     onTitleClick(evt) {
       this.$emit('title-click', evt);
     },
@@ -113,10 +102,12 @@ export default {
 };
 </script>
 <style lang="scss">
-  .navbar-collapse.show {
-    height: 100vh;
-    opacity: 1;
-  }
+.navbar-collapse.show {
+  height: 100vh;
+  opacity: 1;
+  animation: show-navbar-collapse 0.5s ease forwards;
+}
+
 // Keyframes
 @keyframes show-navbar-collapse {
   0% {
@@ -164,13 +155,5 @@ export default {
     transform: translate(0, 10px);
   }
 }
-.slide-enter-active,
-.slide-enter {
-    animation: show-navbar-collapse 0.5s ease forwards;
-}
 
-.slide-leave-active,
-.slide-leave-to {
-   animation: hide-navbar-collapse 0.5s ease forwards;
-}
 </style>
